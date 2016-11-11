@@ -1,0 +1,10 @@
+name: BlockRunner-Remake
+main: awesomeman2812.BlockRunner
+version: 1.0
+author: AwesomeMan2812
+commands:
+   blockrunner:
+      description: This is the main command for BlockRunner.
+      usage: /<command> [player]
+      permission: blockrunner.default
+      permission-message: You don't have permission to use this command!
