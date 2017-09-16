@@ -5,6 +5,14 @@ author: AwesomeMan2812
 commands:
    blockrunner:
       description: This is the main command for BlockRunner.
-      usage: /<command> [player]
+      usage: /<command>
       permission: blockrunner.default
       permission-message: You don't have permission to use this command!
+      aliases: [br,blockrunner,blockrun]
+permissions:
+   blockrunner.default:
+      description: The default permission for all players
+      default: true
+   blockrunner.vip:
+      description: The permission given to VIP players for perks
+      default: op
