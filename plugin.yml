@@ -1,5 +1,5 @@
 name: BlockRunner-Remake
-main: me.awesomeman2812.BlockRunner.main
+main: me.awesomeman2812.BlockRunner.main.BR
 version: 0.1
 author: AwesomeMan2812
 commands:
