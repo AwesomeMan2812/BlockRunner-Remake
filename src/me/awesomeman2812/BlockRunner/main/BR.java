@@ -11,7 +11,7 @@ public class BR extends JavaPlugin{
 	public void onEnable(){
 		plugin = this;
 		System.out.println("[BlockRunner] BlockRunner v2.0 (Version " + plugin.getDescription().getVersion() + ") has been enabled!");
-		getCommand("blockrunner").setExecutor(new CommandHandler());
+		getCommand("br").setExecutor(new CommandHandler());
 	}
 	
 	@Override
