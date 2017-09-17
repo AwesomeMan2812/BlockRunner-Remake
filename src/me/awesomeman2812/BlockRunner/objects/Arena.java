@@ -1,6 +1,6 @@
 package me.awesomeman2812.BlockRunner.objects;
 
-import java.util.List;
+import java.util.ArrayList;
 
 import me.awesomeman2812.BlockRunner.enums.ArenaState;
 
@@ -11,12 +11,12 @@ public class Arena {
 	private String name;
 	private String gamemode;
 	private Location lobby, spawn;
-	private List<Location> levels;
+	private ArrayList<Location> levels;
 	private ArenaState state;
 	private int arenatime;
 	private int lobbytime;
 	
-	public Arena(String nm, String gm, Location lob, Location sp, List<Location> lvl, ArenaState st, int at, int lt){
+	public Arena(String nm, String gm, Location lob, Location sp, ArrayList<Location> lvl, ArenaState st, int at, int lt){
 		gamemode = gm;
 		name = nm;
 	    lobby = lob;
@@ -44,7 +44,11 @@ public class Arena {
 		spawn = l;
 	}
 	
-	public void setLevelLocations(List<Location> lvls){
+	public void addLevelLocation(Location l, int num){
+		levels.add(num, l);;
+	}
+	
+	public void setLevelLocations(ArrayList<Location> lvls){
 		levels = lvls;
 	}
 	
@@ -77,7 +81,7 @@ public class Arena {
 		return spawn;
 	}
 	
-	public List<Location> getLevelLocations(){
+	public ArrayList<Location> getLevelLocations(){
 		return levels;
 	}
 	

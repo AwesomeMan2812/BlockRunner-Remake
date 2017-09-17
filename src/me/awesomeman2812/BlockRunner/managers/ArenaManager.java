@@ -1,15 +1,15 @@
 package me.awesomeman2812.BlockRunner.managers;
 
-import java.util.List;
+import java.util.ArrayList;
 
 import me.awesomeman2812.BlockRunner.objects.Arena;
 
 public class ArenaManager {
 
-	private List<Arena> brArenas;
+	private ArrayList<Arena> brArenas;
 	
-	public void addArena(Arena a){
-		brArenas.add(a);
+	public ArenaManager(){
+		this.brArenas = new ArrayList<Arena>();
 	}
 	
 	public Arena getArena(String n){
@@ -21,7 +21,11 @@ public class ArenaManager {
 		return null;
 	}
 	
-	public List<Arena> getArenas(){
+	public void addArena(Arena a){
+		brArenas.add(a);
+	}
+	
+	public ArrayList<Arena> getArenas(){
 		return brArenas;
 	}
 }

@@ -18,8 +18,13 @@ permissions:
       default: op
       children:
         - blockrunner.default
+   blockrunner.mod:
+      description: The permission given to Moderator players
+      default: op
+      children:
+        - blockrunner.vip
    blockrunner.admin:
       description: The permission given to Admin players
       default: op
       children:
-        - blockrunner.vip
+        - blockrunner.mod
